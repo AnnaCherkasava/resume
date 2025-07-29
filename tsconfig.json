@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    /* 🔌 Базовые */
+    "target": "ES2020",
+    "module": "ESNext",
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+
+    /* 📦 Модули */
+    "moduleResolution": "Node",
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+
+    /* 🔒 Строгие проверки */
+    "strict": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+
+    /* ⚙️  React / JSX */
+    "jsx": "react-jsx",           // для React 17+ (CRA, Vite)
+    "isolatedModules": true,
+    "noEmit": true                // не выводить .js‑файлы, сборкой занимается webpack/vite
+
+    /* 🛠️  Доп. опции можно добавить позже */
+  },
+  "include": ["src"]              // компилируем только исходники
+}
